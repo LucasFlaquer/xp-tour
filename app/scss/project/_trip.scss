@@ -3,24 +3,17 @@
 	// background: linear-gradient(180deg,#3cecc2,#343944);
 
 	&--item {
-    border: 1px solid transparent;
-    background-color: $light-blue;
+   	border: 1px solid rgba(0,0,0,.125);
     display: block;
     padding: 10px;
     margin-bottom: 20px;
-    border-radius: 10px;
-    text-align: center;
-    &:hover {
-    	text-decoration: none;
-    	background-color: darken($light-blue, 20%);
-    	border: 1px solid darken($light-blue, 20%);
-  	}
+    border-radius: 6px;
 	}
 	&--image {
-		// border-top: 1px solid $dark-orange;
-		img {
-			max-width: 100%;
-		}
+		max-width: 100%;
+	}
+	&--detail {
+		padding: 1.25rem;
 	}
 	&--title {
 		font-family: 'Rubik-Regular';

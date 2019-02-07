@@ -6,6 +6,20 @@
 	&--list {
 		list-style: none;
 	}
+	&--item {
+		padding-left: 15px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+			.fa {
+			margin-right: 5px;
+			font-size: 20px;
+			width: 5%;
+			text-align: center;
+			color: $blue;
+		}
+	}
+
 	&--logo {
 		display: flex;
     justify-content: center;
