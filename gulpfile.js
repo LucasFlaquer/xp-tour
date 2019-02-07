@@ -19,7 +19,10 @@ const path = {
 	dist: {
 		root: "dist/",
 		css: "dist/css",
-    js: "dist/js"
+    js: "dist/js",
+    samples: "dist/samples",
+    fonts: "dist/fonts",
+    fontAwesome: "dist/fonts/font-awesome"
 	}
 }
 const bootstrap = path.root + "node_modules/bootstrap/dist/js/bootstrap.js";
@@ -51,6 +54,20 @@ function copyJs() {
     .pipe(gulp.dest(path.dist.js))
     .pipe(browserSync.reload({stream: true}));
 }
+function copyFonts() {
+  return gulp
+    .src(path.root + "node_modules/font-awesome/fonts/*")
+    .pipe(gulp.dest(path.dist.fontAwesome))
+    .pipe(browserSync.reload({stream: true}));
+}
+
+function copyImg() {
+  return gulp
+    .src("app/samples/*")
+    .pipe(gulp.dest("dist/samples"))
+    .pipe(browserSync.reload({stream: true}));
+}
+
 // reload browser starta o browser
 function browsersync() {
 	browserSync.init({
@@ -74,7 +91,7 @@ function watch() {
   gulp.watch(path.src.js, copyJs);
 }
 
-const build = gulp.parallel(buildJS, style, copyHtml);
+const build = gulp.parallel(buildJS,  copyImg,copyFonts, style, copyHtml);
 
 exports.watch = watch;
 exports.browsersync = browsersync;
