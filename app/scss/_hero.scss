@@ -1,0 +1,13 @@
+.hero {
+	height: 100vh;
+	padding: 20px;
+	background-image: url("../samples/hero-wallpaper.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&--title {
+		max-width: 500px;
+	}
+}
