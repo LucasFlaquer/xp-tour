@@ -5,7 +5,7 @@
 }
 
 .section {
-	margin-top: 90px;
+	// margin-top: 90px;
 }
 
 // class para a abretura do menu
@@ -19,9 +19,16 @@ body {
 		  right: 0;
 		  bottom: 0;
 		  left: 0;
-		  z-index: -1;
+		  z-index: 1;
 		  background-color: #000;
 		  opacity: 0.5;
 		}
+	}
+}
+.section {
+	margin-bottom: 1vw;
+	&--title {
+		color: $blue;
+		margin-bottom: 30px;
 	}
 }

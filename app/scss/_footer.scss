@@ -1,0 +1,24 @@
+.footer {
+	padding: 20px;
+	background: $green-light;
+	margin-top: 5vw;
+	
+	&--list {
+		list-style: none;
+	}
+	&--logo {
+		display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+	&--brand {
+    
+    // height: 100%;
+    font-size: 5rem;
+    color: $blue;
+    &:hover {
+    	text-decoration: none;
+    	color: darken($blue, 10%);
+    }
+	}
+}

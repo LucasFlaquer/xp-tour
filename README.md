@@ -30,24 +30,3 @@ Quais linguagens espero encontrar: Imagino que você irá usar bastante html5 e 
 Forma de entrega: vou precisar que você me mande um arquivo ZIP, por wetransfer ( wetransfer.com ) com todos os arquivos já organizados para eu conseguir abrir normalmente o site em minha máquina, mesmo offline. Aliás, pode mandar para o caio@folkcomunicacao.com mesmo que ele ira tocar isso para mim.
 
 Prazo: Eita... eu diria que é pra ontem mas, como não será possível, preciso receber o site pronto até sexta-feira, às 22h, sem falta. Depois disso, nem precisa mandar que eu já irei buscar outra agência para me ajudar.
-
-
-estrutura:
-
-main:
-	hero banner com a frase:
-		Viva o desconhecido.
-		Descubra um novo mundo com a XP Tour.
-
-	listagem de viagens(bootstrap row/ col)
-
-	footer
-	
-
-
-
-menu:
-	sobre
-	pacotes de viagens
-	orçamento
-	contato
