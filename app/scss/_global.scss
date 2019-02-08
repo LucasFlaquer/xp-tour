@@ -10,7 +10,7 @@
 
 // class para a abretura do menu
 body {
-	padding-top: 8vw;
+	padding-top: 84px;
 	&.open {
 		overflow: hidden;
 		&::before {	
@@ -32,5 +32,8 @@ body {
 	&--title {
 		color: $blue;
 		margin-bottom: 30px;
+	}
+	&--subtitle {
+		color: $blue-secondary;
 	}
 }

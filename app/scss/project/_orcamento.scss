@@ -1,13 +1,15 @@
 .orcamento {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	text-align: center;
-  padding: 2vw;
+	form {
+		.btn {
+			margin-top: 10px;
+		}
+	}
+}
 
-	&--text {
-		font-size: 25px;
-		font-weight: 600;
+@media (max-width: 767px) {
+	.orcamento {
+		label {
+			margin-top: 10px;
+		}
 	}
 }

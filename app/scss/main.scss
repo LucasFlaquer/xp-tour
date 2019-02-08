@@ -4,10 +4,13 @@
 @import "variables";
 @import "fonts";
 @import "global";
+
 @import "header";
 @import "footer";
-@import "hero";
 
+@import "hero";
+@import "project/box-img";
 @import "project/trip";
 @import "project/orcamento";
 @import "project/about";
+@import "destino-detalhe";

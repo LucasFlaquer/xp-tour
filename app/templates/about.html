@@ -8,22 +8,26 @@
 </head>
 <body>
   <header class="header">
-    <a href="#" class="header--brand">
+    <a href="/" class="header--brand">
       <span class="fa fa-globe"></span>
       <span>XP<small>tour</small></span>
     </a>
-    <nav class="header--nav">
+    <nav class="navbar header--nav">
       <ul class="header--menu">
-        <li class="header--item"><a class="header--link" href="#">Sobre Nós</a></li>
-        <li class="header--item"><a class="header--link" href="#">Portal de Viagens</a></li>
-        <li class="header--item"><a class="header--link" href="#">Fale Conosco</a></li>
+        <li class="header--item ">
+        <a class="header--link" href="about.html" >
+          Quem Somos
+        </a>
+      </li>
+        <li class="header--item"><a class="header--link" href="/#viagens">Portal de Viagens</a></li>
+        <li class="header--item"><a class="header--link" href="/orcamento.html">Faça um Orçamento</a></li>
       </ul>
     </nav>
     <div class="nav-togle">
       <span class="fa fa-bars"></span>
     </div>
   </header>
-  <section class="section about">
+  <section class="section about" id="sobre">
   	<h2 class="section--title">Sobre nós</h2>
     <div class="container">
       <div class="box-img clearfix">
@@ -31,32 +35,30 @@
           <img src="samples/adventure.jpg" alt="adventure">
         </figure>
         <div class="box-img--body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dicta, excepturi soluta, eum corporis magni illum praesentium laborum minima dignissimos accusantium, vitae voluptatibus recusandae ipsa consectetur unde sequi aspernatur placeat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dicta, excepturi soluta, eum corporis magni illum praesentium laborum minima dignissimos accusantium, vitae voluptatibus recusandae ipsa consectetur unde sequi aspernatur placeat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dicta, excepturi soluta, eum corporis magni illum praesentium laborum minima dignissimos accusantium, vitae voluptatibus recusandae ipsa consectetur unde sequi aspernatur placeat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dicta, excepturi soluta, eum corporis magni illum praesentium laborum minima dignissimos accusantium, vitae voluptatibus recusandae ipsa consectetur unde sequi aspernatur placeat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dicta, excepturi soluta, eum corporis magni illum praesentium laborum minima dignissimos accusantium, vitae voluptatibus recusandae ipsa consectetur unde sequi aspernatur placeat.</p>
+          <p>A Xp Tour é uma agência de turismo focada em desenvolver experiências únicas para aqueles que não conseguem se contentar apenas em “ir aonde todos vão”. Experimente o novo. Viva o desconhecido. Conheça uma nova forma de viver. Descubra um novo mundo com a XP Tour.</p>
+          <p>Nós temos o objetivo de oferecer os melhores pacotes de viagens para destinos como expedições ao himalaia, monte Kilimanjaro, maratona de templos budistas pela índia, passeios de submarino na Rússia, acampamento em uma geleira na patagônia, Rota 66 Americana em uma caravana de motos, e o que mais você achar estranho ou perigoso para pessoas comuns. Tem uma sugestão de passeio? Queremos ouvi-la.</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="section suggestion">
-    <h2 class="section--title">Tem uma sugestão de viage? Entre em contato:</h2>
+  <section class="section suggestion" id="fale">
+    <h2 class="section--title">Tem uma sugestão de viagem ou alguma dúvida?</h2>
+    <h3 class="section--subtitle">Entre em contato:</h3>
     <div class="container">
       <form>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <label for="exampleInputEmail1">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o email">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Nome</label>
           <input type="text" class="form-control" id="Name" placeholder="Digite seu nome">
         </div>
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Digite sua sugestão de lugares inexplorados e incríveis</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="exampleFormControlTextarea1">O que você gostaria de nos dizer?</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nos dê uma sugestão de viagem ou tire sua dúvida"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-outline-secondary">Submit</button>
       </form>
     </div>
 

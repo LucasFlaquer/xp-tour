@@ -28,4 +28,16 @@
 	&--detail {
 		padding: 1.25rem;
 	}
+	&--precos {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+	  padding: 2vw;
+	}
+  &--text {
+		font-size: 25px;
+		font-weight: 600;
+	}
 }

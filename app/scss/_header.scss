@@ -13,6 +13,9 @@
 	&--brand {
 		color: $blue;
 		font-size: 1.8rem;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	&--menu {
 		list-style: none;
@@ -22,10 +25,23 @@
 	&--item {
 		margin-bottom: 5px;
 		border-bottom: 1px solid $blue;
+		&.show {
+			border-bottom: 1px solid transparent;
+			.dropdown-menu {
+				position: relative;
+				width: 100%;
+				background: transparent;
+				color: $blue;
+				border: 1px solid $blue;
+			}
+		}
 	}
 	&--link {
 		color: $blue;
 		display: block;
+		&:active, &:hover {
+			text-decoration: none;
+		}
 	}
 	&--nav {
 		display: none;
@@ -72,6 +88,26 @@
 			border: 1px solid transparent;
 			&:not(:last-child) {
 				margin-right: 20px;
+			}
+			&.show {
+				.dropdown-menu {
+					position: absolute;
+					background: $green-light;
+					.header--link {
+						&:hover {
+							background: transparent;
+							text-decoration: underline;
+							color: $blue;
+						}
+					}
+				}
+			}
+			&--link {
+				&:hover {
+					background: transparent;
+					text-decoration: underline;
+					color: $blue;
+				}
 			}
 		}
 	}
