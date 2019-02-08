@@ -8,6 +8,21 @@
 	align-items: center;
 
 	&--title {
+		padding: 10px;
+		border-radius: 5px;
 		max-width: 500px;
+		background-color: rgba(142, 142, 142, 0.7);
+		font-family: Staatliches, cursive;
+		h1 {
+			font-size: 2rem;
+			font-weight: bold;
+			span {
+				color: $blue;
+			}
+		}
+		h2 {
+			font-size: 3rem;
+			color: #eee;
+		}
 	}
 }
