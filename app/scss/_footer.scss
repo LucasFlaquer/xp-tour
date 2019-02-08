@@ -24,10 +24,8 @@
     justify-content: center;
     align-items: center;
 	}
-	&--brand {
-    
-    // height: 100%;
-    font-size: 5rem;
+	&--brand {    
+    font-size: 4rem;
     color: $blue;
     &:hover {
     	text-decoration: none;

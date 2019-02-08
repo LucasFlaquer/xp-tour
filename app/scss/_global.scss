@@ -10,6 +10,7 @@
 
 // class para a abretura do menu
 body {
+	padding-top: 8vw;
 	&.open {
 		overflow: hidden;
 		&::before {	
@@ -26,6 +27,7 @@ body {
 	}
 }
 .section {
+	padding:20px;
 	margin-bottom: 1vw;
 	&--title {
 		color: $blue;
